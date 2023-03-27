@@ -1,0 +1,173 @@
+ex1 :
+
+
+1 git --version
+
+2 git config --global user.name "nourhane"
+git config --global user.email "nourhane.ziane@edu.devinci.fr"
+
+3 git config user.name
+	git config user.email
+
+ex 2 :
+
+	1  git init
+
+	2 ls -a
+
+	3 git status
+
+	4 echo "# Test repository" > readme.md
+
+	5 git status
+
+	6 git add readme.md
+
+	7 git status
+
+	8 git commit -m "Initial commit: Add readme.md file"
+
+	9 git status
+
+	10 git log
+
+	11 The git logs display information such as the commit hash, author name and email, commit message, and the date and time of the commit.
+
+
+ex3 :
+
+	1 touch main.py functions.py
+
+	2 git status
+
+	3 git add main.py
+
+	4 git status
+
+	git commit -m "Add main.py "
+
+	6 git status
+
+	7  git add functions.py
+		git commit -m "Add functions.py file"
+
+	8	git status
+
+	9 git log
+
+Ex 4 :
+
+	1 touch requirements.txt .gitignore .private
+
+	2 git status
+
+	3 git add .
+
+	4 git status
+
+	5 git commit -m "Add all files"
+
+	6 git status
+
+	7 git log --oneline
+
+ex5 :
+
+	1 touch temp.ipynb
+
+	2 git status
+
+	3 echo "temp.ipynb" >> .gitignore
+
+	4 git status
+
+	5 touch temp.aux temp.log
+
+	6 git status
+
+	7 echo "temp*" >> .gitignore
+
+	8 git status
+
+	9 echo ".private" >> .git/info/exclude
+
+
+ex6 :
+	
+	1 echo "online description .." >> readme.md
+
+	2 git add readme.md
+
+	3 git diff HEAD
+
+	4 git commit -m "Added description to readme"
+
+	5 git log -p
+
+	6 git diff HEAD
+
+	7 vim readme.md
+
+	8 git diff HEAD
+
+
+ex7 :
+
+	1 git rm -r .
+
+	2 git clone
+
+	3 git push
+
+	4  rm -rf <directory>
+
+		mkdir <directory>
+
+		git clone
+
+	5 git reset
+
+	6 git commit -a -m "without stage"
+
+	7 git log
+
+	8 	git clone 
+		cd <directory>
+		git checkout <commit-hash>
+
+	9 git log --all
+
+	10 git checkout <commit-hash>
+
+	11 git revert <commit-hash>
+
+	12 No
+
+	13 Yes
+
+	14 git reset HEAD~2
+
+	15 No, the changes have not disappeared. They are still present in the root directory
+
+	16 No, we have not completely lost the last two commits. They have been removed from the commit log history, but they can still be found using the git reflog command
+
+
+Ex 9 :
+
+	1 mkdir hash && cd hash
+
+	2 echo "Hello World" > file.txt
+
+	3 ls -lh file.txt
+
+	4 cat file.txt
+
+	5 sha1sum file.txt
+
+	6 git hash-object file.txt
+
+	7 echo -e "blob 11\0Hello World" > gitfile.txt
+
+	8 sha1sum gitfile.txt
+
+		Yes gitfile.txt and file.txt values are equals
