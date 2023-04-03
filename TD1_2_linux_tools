@@ -1,0 +1,74 @@
+Exo 1:
+
+Cat /etc/os-release
+Ps -ef
+Top
+Lscpu | grep cache
+Df -h
+Du -h
+Cat/proc/mounts
+Dmesg | grep usb
+hostname
+
+
+EXO 2:
+
+1 x="piri pimpin"
+echo $x
+3 x="$x piri pimpon"
+echo $x
+4 touch my_programs
+cd my_programs
+5 emacs my_programs 
+	echo “pilou pilou”
+7 chmod +x pilou
+8 pilou
+9 PATH=$PATH:/home/admin/TD/my_programs/
+10 echo $PATH
+11 pilou 
+
+
+EXO 3:
+
+1 vim say_hello.sh
+X=”$x Hello”
+Echo $x >> ~/TD1/say_hello.sh
+2 Chmod +x say_hello.sh
+3 crontab -e 
+	Emacs 
+Crontab -l
+Cat hello.txt
+
+EXO 4:
+
+1 mkdir hash_checksum
+2 touch .sensible_addresses
+Touch sensible_passwords
+3 ls -ltrha
+4 vim gentle_script.sh
+5 more gentle_script.sh
+6 sha256sum gentle_script.sh >> log_sha
+7 rm filename* : remove all files with the name filename
+8 sha256sum gentle_script.sh >> log_sha
+9 gentle_script.sh
+10 ls -al
+
+
+EXO 5:
+
+2 mkdir compress
+3 touch hello
+4 cat hello | zlib-flate -compress=1 > hello.z 
+5 touch hello_multiple
+6  vim hello_multiple.sh
+	For i in (1..1000)
+	Do 
+		Echo ‘’Hello’’>> hello_multiple
+	Done
+	For i in (1..1000)
+	Do
+		For j in (1..1000)
+		Do
+			Echo ‘’ Hello $j’’ >> hello_multiple
+			Done
+		done
