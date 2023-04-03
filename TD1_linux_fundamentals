@@ -59,7 +59,7 @@ anything
 EXO 4:2 
 
 1 cd /
-2 touch private
+2 touch .private_file
 	Emacs .private_file then hi everyone
 	ls -ltrha
 3 emacs .private_file then hi ! everyone
