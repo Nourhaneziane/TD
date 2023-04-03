@@ -1,0 +1,74 @@
+EXO1 :
+
+1 cd /
+2 ls
+3 pwd
+4 mkdir test
+5 /home>ls
+6 pwd
+7 cd ../
+8 cd ../
+9 pwd
+10 rmdir test then mkdir test
+11 cd test
+12 pwd
+
+
+EXO 2 :
+
+1 cd
+2 pwd
+3 mkdir linux_ex_1
+4 ls -l
+4 cd linux_ex_1>pwd
+5 touch Nourhan_ziane.txt
+6  mkdir notes
+7 mv linux_ex_1/Nourhane_ziane_2023.txt notes
+8 cp -r notes_2022
+9 rm -r notes_2022
+10 rm -v -r notes
+
+EXO 3:
+
+1 vim script_1.sh
+2 emacs script_1.sh
+	echo “Script running, please wait…”
+	echo “Done”
+3 ctrl+c ctrl+x
+4 cat script_1.sh
+5 more script_1.sh with chmod 744 script_1.sh
+
+
+EXO 4:
+
+1 
+(a)	emacs credentials 
+anything 
+(b)	cat credentials
+(c) ls -l
+2 chmod 444 credentials
+(a)	ls -l
+(b)	emacs credentials  we can’t modify
+(c)	cat credentials
+3 chmod 777 credentials
+(a)	ls -l 
+(b)	emacs credentials modify
+(c)	cat credentials 
+
+
+EXO 4:2 
+
+1 cd /
+2 touch private
+	Emacs .private_file then hi everyone
+	ls -ltrha
+3 emacs .private_file then hi ! everyone
+4 sudo emacs .private_file
+	Cat .private_file
+5 chmod 777 .private_file
+
+
+EXO 4:3
+cmatrix
+tmux new -s Session0
+
